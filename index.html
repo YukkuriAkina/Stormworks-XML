@@ -46,6 +46,13 @@
             padding: 1em;
             margin-bottom: 1em;
         }
+
+        .left {
+            font-weight: 100;
+            font-size: 0.8em;
+            padding-left: 0.5em;
+            border-left: 0.2em solid orange;
+        }
     </style>
 </head>
 
@@ -69,8 +76,23 @@
         |_data<br>
         &emsp;|_各自フォルダ
     </div>
-
     </p>
+    <h1>ブロック
+    </h1>
+    <p>ブロックはdata/definitions内に作ったxmlファイルから全て参照される。全て参照ということはもちろん、自分の好きな名前で保存すると新しいブロックとして認識される。<br>既存の物を置き換えたいのであれば同じ名前のXMLファイルを作成またはrom/data内からXMLファイルをコピーしてくればOK!!
+        <br>公式Wikiより引用<br>
+        my_mod/data/definitionsフォルダにコンポーネント定義を作成する（ゲームから元のファイルをコピーするだけ） - コンポーネントの物理的な形状と境界を定義するボクセルを設定する -
+        コンポーネントの境界に基づいてサーフェスを設定する - 浮力サーフェスを設定する（通常、形状を使用する通常のサーフェスと一致させる必要があります） -
+        メッシュを使用する場合はメッシュファイルのパスを設定する（プリミティブブロックのみメッシュなしで実行できます） - 独自のメッシュを使用する場合は、例えばmy_mod/meshes/componentsに追加します、
+        独自のメッシュを使用する場合は、例えばmy_mod/meshes/componentsに追加します - これらのパスを定義することができるので、メッシュファイルの構造を好きなように整理することができます -
+        効果音を使用する場合は、SFXファイルのパスを設定します - 独自の効果音を使用する場合は、例えばmy_mod/audio/componentsに追加します -
+        これらのパスを定義することができるので、オーディオファイルの構造を好きなように整理することができます - 注意：
+        最後に、名前、説明、コスト、質量を更新します。カテゴリを更新し、追加のタグを追加することもできます（カテゴリとロジックタグは自動的に作成されます）。
+        <br><a href="https://i.imgur.com/pjjCOhW.png">画像</a>
+    </p>
+    <h1>単語</h1>
+    <p>ボクセル: 当たり判定</p>
+
     <h2 id="folder">フォルダ一覧</h2>
     <p id="mods">Modsフォルダ: <code
             class="code">C:/Users/USERNAME/AppData/Roaming/Stormworks/data/mods(無い場合作成) or Win+R %appdata%/Stormworks</code>
@@ -169,6 +191,7 @@
 
     </ul>
     <h1>プロパティ</h1>
+    <h3>definition</h3>
     <ul>
         <li>name
             <p>
@@ -180,29 +203,356 @@
                 カテゴリ
             </p>
             <div class="background">
-                0 = 調査中<br>
-                1 = 調査中<br>
-                2 = 調査中<br>
-                3 = 調査中
+                0 = Blocks<br>
+                1 = Vehicle Control<br>
+                2 = MECHANICS<br>
+                3 = PROPULSION<br>
+                4 = SPECIALIST EQ(以下省略ﾒﾝﾄﾞｸｾｴﾖ<br>
+                5 = LOGIC<br>
+                6 = DISPLAYS<br>
+                7 = SENSORS<br>
+                8 = DECORATIVE <br>
+                9 = FLUID<br>
+                10 = ELECTRIC<br>
+                11 = JETENGINES<Br>
+                12 = WEAPONs<br>
+                13 = モジュールエンジン<br>
+                14 = INDUSTRY <br>
+                15 = WINDOWS <Br>
+                16 = マイコン(対応してるかは不明)
             </div>
         </li>
         <li>type
             <p>
-                タイプ(不明)
+                ブロックのタイプを指定できる。いわゆるID
             </p>
             <div class="background">
                 0 = 調査中<br>
+                5 = ?<br>
+                43 = モニター
             </div>
         </li>
-        <li>name
+        <li>value
             <p>
-                パーツの名称
+                ソレガワカラナインダヨネ(調査中)
             </p>
 
         </li>
         <li>Mass
             <p>
                 パーツの重さ
+            </p>
+        </li>
+        <li>flags
+            <p>
+                Voxel系列のプロパティ。公式に乗ってます(調査中)
+            </p>
+        </li>
+        <li>tags
+            <p>
+                タグ
+            </p>
+            <p class="left" style="border-color: rgb(255, 0, 0);">
+                例:"test,test2,test3"
+            </p>
+        </li>
+        <li>audio_filename_start
+            <p>
+                調査中。オブジェクトによって動作が異なる
+            </p>
+            <p class="left" style="border-color: rgb(0, 21, 255);">
+                音
+            </p>
+        </li>
+        <li>audio_filename_loop
+            <p>
+                ブロックの使用中に使用する音。ブロックによって動作が異なる?
+            </p>
+            <p class="left" style="border-color: rgb(0, 21, 255);">
+                音
+            </p>
+        </li>
+        <li>audio_filename_end
+            <p>
+                調査中。オブジェクトによって動作が異なる
+            </p>
+            <p class="left" style="border-color: rgb(0, 21, 255);">
+                音
+            </p>
+        </li>
+        <li>audio_gain
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>mesh_data_name
+            <p>
+                ブロックのメッシュ。ファイルパスで指定する
+            </p>
+        </li>
+        <li>mesh_0_name
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>mesh_1_name
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>mesh_editor_only_name
+            <p>
+                ワークベンチ内のメッシュを指定するプロパティ。ファイルパスで指定する
+            </p>
+        </li>
+        <li>block_type
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>child_name
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>audio_gain
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>mesh_data_name
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>mesh_0_name
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>mesh_1_name
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>mesh_editor_only_name
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>block_type
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>child_name
+            <p>
+                調査中。
+            </p>
+        </li>
+        <!---->
+        <li>extender_name
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>constraint_type
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>constraint_axis
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>constraint_range_of_motion
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>max_motor_force
+            <p>
+                調査中。
+            </p>
+            <p class="left" style="border-color: rgb(0, 21, 255);">
+                モーター
+            </p>
+        </li>
+        <li>seat_type
+            <p>
+                調査中。
+            </p>
+            <p class="left" style="border-color: rgb(0, 21, 255);">
+                シート|椅子
+            </p>
+        </li>
+        <li>buoy_radius
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>buoy_factor
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>buoy_force
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>force_emitter_max_force
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>force_emitter_max_vector
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>engine_max_force
+            <p>
+                調査中。
+            </p>
+            <p class="left" style="border-color: rgb(0, 21, 255);">
+                エンジン
+            </p>
+        </li>
+        <li>trans_conn_type
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>trans_type
+            <p>
+                調査中。
+            </p>
+        </li>
+        <!---->
+        <li>wheel_radius
+            <p>
+                ホイール判定の範囲？
+            </p>
+        </li>
+        <li>button_type
+            <p>
+                ボタンのタイプだと思われる。調査中
+            </p>
+            <div class="background">
+                0 = ?<br>
+                1 = ?
+            </div>
+        </li>
+        <li>light_intensity
+            <p>
+                光の強度と推定される。デフォ値0.000000
+            </p>
+            <p class="left" style="border-color: rgb(0, 21, 255);">
+                ライト
+            </p>
+        </li>
+        <li>light_range
+            <p>
+                光の範囲と推定される。
+            </p>
+            <p class="left" style="border-color: rgb(0, 21, 255);">
+                ライト
+            </p>
+        </li>
+        <li>light_ies_map
+            <p>
+                調査中。
+            </p>
+            <p class="left" style="border-color: rgb(0, 21, 255);">
+                ライト
+            </p>
+        </li>
+        <li>light_fov
+            <p>
+                調査中。
+            </p>
+            <p class="left" style="border-color: rgb(0, 21, 255);">
+                ライト
+            </p>
+        </li>
+        <li>light_type
+            <p>
+                ライトのタイプ？
+            </p>
+            <p class="left" style="border-color: rgb(0, 21, 255);">
+                ライト
+            </p>
+        </li>
+        <li>door_lower_limit
+            <p>
+                ドア関係？調査中。
+            </p>
+        </li>
+        <li>door_upper_limit
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>dynamic_min_rotation
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>dynamic_max_rotation
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>logic_gate_type
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>indicator_type
+            <p>
+                調査中。
+            </p>
+        </li>
+        <li>connector_type
+            <p>
+                コネクタのタイプ？調査中
+            </p>
+        </li>
+        <li>magnet_force
+            <p>
+                マグネットの強度？調査中
+            </p>
+        </li>
+        <li>gyro_type
+            <p>
+                ジャイロのタイプ？調査中
+            </p>
+        </li>
+        <li>rudder_surface_area
+            <p>
+                調査中
+            </p>
+        </li>
+        <li>phys_collision_dampen
+            <p>
+                調査中
+            </p>
+        </li>
+        <li>rudder_surface_area
+            <p>
+                調査中
+            </p>
+        </li>
+        <li>rudder_surface_area
+            <p>
+                調査中
+            </p>
+        </li>
+        <li>rudder_surface_area
+            <p>
+                調査中
             </p>
         </li>
     </ul>

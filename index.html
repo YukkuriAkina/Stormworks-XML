@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /*読みにくかったらここ消して*/
+            background-color: rgb(34, 34, 34);
+            color: white;
+        }
+
+        a {
+            color: rgb(255, 132, 0);
+            font-weight: bolder;
+        }
+
+        li {
+            list-style: none;
+            font-weight: bolder;
+            border-bottom: 0.01em solid;
+            margin: 0em;
+            padding: 0em;
+        }
+
+        li p {
+            color: rgb(194, 194, 194);
+            font-weight: 100;
+            font-size: 0.8em;
+            padding-left: 0.5em;
+            border-left: 0.2em solid orange;
+        }
+
+        .code {
+            border-radius: 0.5em;
+            padding: 0.3em;
+            background-color: black;
+            color: white;
+        }
+
+        .background {
+            background-color: rgb(55, 55, 55);
+            border-radius: 1em;
+            padding: 1em;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Stormworks Modding,XML Doc
+    </h1>
+    <a href="#mazu">環境構築</a>
+    <a href="#tag">タグ名</a>
+    <a href="#tag">プロパティ名</a>
+    <h1 id="mazu">環境構築</h1>
+    <p>まず<a href="#mods">Modsフォルダ</a>内にフォルダを新規作成します。(例:testmod)<br>次に作ったフォルダ内にmod.xmlを作成し以下のように記述します<br><code
+            class="code">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+            &lt;mod name="TEST mod" author="name" desc="Short description"/&gt;</code>
+        <br>name属性はMod名前を指定、Author属性は作成者、descは説明を定義します。(マニフェストのようなもの)<Br>
+        さらに同フォルダ内にdataフォルダを作成します。<br>作りたいものに応じてdataフォルダ内に<a
+            href="#data">参照</a>のフォルダを各自作り、ROM・dataフォルダを参考にModを作成してください。以上です。
+    <div style="background-color: rgb(55, 55, 55); border-radius: 1em; padding: 1em;">
+        testmod<br>
+        |_mod.xml<br>
+        |_data<br>
+        &emsp;|_各自フォルダ
+    </div>
+
+    </p>
+    <h2 id="folder">フォルダ一覧</h2>
+    <p id="mods">Modsフォルダ: <code
+            class="code">C:/Users/USERNAME/AppData/Roaming/Stormworks/data/mods(無い場合作成) or Win+R %appdata%/Stormworks</code>
+    </p>
+    <p>ROM(ゲームデータ): <code
+            class="code">C:\Program Files (x86)\Steam\steamapps\common\Stormworks\rom OR Stormworksインストール場所/rom</code>
+    </p>
+    <p>SDK: <code
+            class="code">C:\Program Files (x86)\Steam\steamapps\common\Stormworks\sdk OR Stormworksインストール場所/sdk</code>
+    </p>
+    <div style="background-color: rgb(55, 55, 55); border-radius: 1em; padding: 1em;">
+        <h2>ROM</h2>
+        <p>Audio(音): rom/audio
+        </p>
+        <p>data(メインデータ): rom/data
+        </p>
+        <p>graphics(UIのコード系列): rom/graphics
+        </p>
+        <p>meshs(独自形式のメッシュ): rom/meshs
+        </p>
+    </div>
+    <div style="margin-top: 1em; background-color: rgb(74, 74, 74); border-radius: 1em; padding: 1em;">
+        <h2 id="data">data</h2>
+        <p>※一部を除いて中身全てXML</p>
+        <p>benchmark(ベンチマーク系): data/benchmark
+        </p>
+        <p>debris(objectと思われる): rom/debris
+        </p>
+        <p>definitions(ブロックのデータ): rom/definitions
+        </p>
+        <p>missions(ミッション): rom/missions
+        </p>
+        <p>narrative(乗り物系ミッション??): rom/narrative
+        </p>
+        <p>preset_vehicles_advanced(デフォプリセット): rom/preset_vehicles_advanced
+        </p>
+        <p>realtime_values(他所から参照用のファイル？？): rom/realtime_values
+        </p>
+        <p>tiles(マップの一部): rom/tiles
+        </p>
+    </div>
+
+
+    <h1 id="tag">タグ名</h1>
+    <ul>
+        <li>definition
+            <p>
+                コンポーネント定義？
+            </p>
+        </li>
+        <li>sfx_datas
+            <p>
+                調査中(推測:データの集合体)
+            </p>
+        </li>
+        <li>sfx_data
+            <p>
+                調査中
+            </p>
+        </li>
+        <li>sfx_layers
+            <p>
+                データのレイヤー？
+            </p>
+        </li>
+        <li>logic_nodes
+            <p>
+                ロジックノードの集合体
+            </p>
+        </li>
+        <li>sfx_data
+            <p>
+                調査中
+            </p>
+        </li>
+        <li>sfx_data
+            <p>
+                調査中
+            </p>
+        </li>
+        <li>sfx_data
+            <p>
+                調査中
+            </p>
+        </li>
+        <li>sfx_data
+            <p>
+                調査中
+            </p>
+        </li>
+        <li>sfx_data
+            <p>
+                調査中
+            </p>
+        </li>
+
+    </ul>
+    <h1>プロパティ</h1>
+    <ul>
+        <li>name
+            <p>
+                パーツの名称
+            </p>
+        </li>
+        <li>category
+            <p>
+                カテゴリ
+            </p>
+            <div class="background">
+                0 = 調査中<br>
+                1 = 調査中<br>
+                2 = 調査中<br>
+                3 = 調査中
+            </div>
+        </li>
+        <li>type
+            <p>
+                タイプ(不明)
+            </p>
+            <div class="background">
+                0 = 調査中<br>
+            </div>
+        </li>
+        <li>name
+            <p>
+                パーツの名称
+            </p>
+
+        </li>
+        <li>Mass
+            <p>
+                パーツの重さ
+            </p>
+        </li>
+    </ul>
+</body>
+
+</html>

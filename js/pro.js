@@ -33,10 +33,10 @@ const Prop = [
     },
     {
         name: "type",
-        des: `作るコンポーネントのベース(継承するベース)のID${tei} このIDは恐らく公式側が既に用意している物からの選択となる。最大値は調査中`,
+        des: `作るコンポーネントのベース(クラスでいうと継承するクラス)のID${tei} このIDは恐らく公式側が既に用意している物からの選択となる。最大値は調査中`,
         type: "基本",
         tag: ["definition"],
-        list: [`0:${nul}`, `5:${nul}`, `27:Mag AllまたはConnector?`, `31:Motor`, `43:モニター`]
+        list: [`0:${nul}`, `5:${nul}`, "8:ボタン", `27:Mag AllまたはConnector?`, `31:モーター`, `43:モニター`]
     },
     {
         name: "value",
@@ -90,7 +90,7 @@ const Prop = [
     },
     {
         name: "audio_gain",
-        des: ``,
+        des: `指定されたオーディオファイルの音量を${tei} 検証はしていません。`,
         type: "音",
         tag: ["definition"],
         list: []
@@ -104,14 +104,14 @@ const Prop = [
     },
     {
         name: "mesh_0_name",
-        des: ``,
+        des: `個別の動作があるメッシュを${tei} 例えば時計の場合、外側のフレームはmesh_data_nameを指定し、このプロパティに時針を指定します。`,
         type: "メッシュ",
         tag: ["definition"],
         list: []
     },
     {
         name: "mesh_1_name",
-        des: ``,
+        des: `個別の動作があるメッシュ(2つ目)を${tei} 例えば時計の場合、外側のフレームはmesh_data_nameを指定し、このプロパティに秒針を指定します。`,
         type: "メッシュ",
         tag: ["definition"],
         list: []
@@ -125,21 +125,21 @@ const Prop = [
     },
     {
         name: "block_type",
-        des: ``,
+        des: `ブロックのタイプを${tei} 何のタイプをかは${nul} 推測は2x2等のブロック。基本ブロックについていることが多い`,
         type: "基本",
         tag: ["definition"],
-        list: []
+        list: [`0: ${nul}`, `1: 02_wedge azimuth_thruster`, `2: 03_pyramid`, `3: 04_invpyramid`, `4: 05_wedge_2`, `5: 06_pyramid_2`, `6: 07_invpyramid_2`, `7: 08_wedge_4`, `8: 09_pyramid_4`, `9: Inverse Pyramid 1x4`, `10: Pyramid 2x2`, `11: Pyramid 2x4`, `12: Pyramid 4x4`, `13: Inverse Pyramid 2x2`, `14: Inverse Pyramid 2x4`, `15: Inverse Pyramid 4x4`, `16: Inverse Pyramid 4x4`, `15: Inverse Pyramid 4x4`]
     },
     {
         name: "child_name",
-        des: ``,
+        des: `子`,
         type: "基本",
         tag: ["definition"],
-        list: []
+        list: ['linear_base : linear_head', 'linear_compact_base : linear_compact_head', 'linear_matic_a : linear_matic_b', 'multibody_compact_pivot_robotic_a : multibody_compact_pivot_b', 'multibody_compact_pivot_velocity_a : multibody_compact_pivot_b', 'multibody_door_hinge_a : multibody_door_hinge_b', 'multibody_piston_suspension_a : multibody_piston_suspension_b', 'multibody_pivot_a : multibody_pivot_b', 'multibody_suspension_a : multibody_suspension_b', 'multibody_turret_large_a : multibody_turret_large_b', 'multibody_turret_medium_a : multibody_turret_medium_b', 'multibody_turret_small_a : multibody_turret_small_b', 'multibody_velocity_pivot_a : multibody_velocity_pivot_b', 'oil_rig_pumpjack : oil_rig_pumpjack_b', 'water_hose : water_hose_b', 'winch_a : winch_b', 'winch_electric : winch_electric_b', 'winch_huge_a : winch_b', 'winch_large_a : winch_b']
     },
     {
         name: "extender_name",
-        des: ``,
+        des: `無使用プロパティの模様(スクリプト検証)`,
         type: "基本",
         tag: ["definition"],
         list: []
@@ -240,10 +240,10 @@ const Prop = [
         list: []
     }, {
         name: "button_type",
-        des: `ボタンのタイプ${tei}と思われる。Number`,
+        des: `ボタンのタイプ${tei} Number`,
         type: "基本",
         tag: ["definition"],
-        list: ["0:?", "1:?"]
+        list: ["0:Push Button", "1:Toggle Button", "2: Key Button", "3: Lock Button", "4: throttle Lever", "5:KEYPAD SMALL", "6:KEYPAD LARGE"]
     }, {
         name: "light_intensity",
         des: `光の強度${tei} Number`,

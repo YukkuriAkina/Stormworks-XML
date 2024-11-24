@@ -139,7 +139,7 @@ const Prop = [
     },
     {
         name: "extender_name",
-        des: `無使用プロパティの模様(スクリプト検証)`,
+        des: ``,
         type: "基本",
         tag: ["definition"],
         list: []

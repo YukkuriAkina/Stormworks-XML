@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全プロパティ乗せ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="leftmenu">
+        <h4>
+            <a href="/">Stormworks Modding Doc</a>
+        </h4>
+        <ul>
+            <li><a href="build.html">環境構築編</a></li>
+            <li><a href="Blocks.html">ブロック</a></li>
+            <li class="small" style="background-color: rgb(102, 102, 102);"><a href="Blocks.html#Voxel">ボクセル</a></li>
+            <li class="small" style="background-color: rgb(102, 102, 102);"><a href="Blocks.html#Surface">サーフェス</a>
+            </li>
+            <li><a href="Mesh.html">メッシュ</a></li>
+            <li><a href="Map.html">マップ</a></li>
+            <li><a href="Property.html">プロパティ</a></li>
+            <li><a href="Tag.html">タグ</a></li>
+            <li><a href="koneta.html">小ネタ注意事項その他</a></li>
+            <li><a href="old_index.html">旧ドキュメント</a></li>
+            <small style="position: absolute; top: 93%;">Create by YK_Akina</small>
+        </ul>
+    </div>
+    <div class="root">
+        <h1>全プロパティの値
+        </h1>
+        <div class="reference" style="border-color: red; padding: 1em;">当ページの値は全てスクリプトによる自動検索のためご注意ください。</div>
+        <p>当ページは(出来るだけ)全てのプロパティの値を載せているページです。※V1.13.0(2024-11-24)時点の情報です<br>プロパティ名の見出し<br>XMLファイル名 :
+            値　という文法で記述しています。<br>注意:一部値の箇所にxxx=数値と入ってしまっている箇所があります。その個所は=の後が数値となりますのでご注意ください
+        </p>
+        <div class="background">
+            <h2>child_name</h2>
+            'linear_base : linear_head', 'linear_compact_base : linear_compact_head', 'linear_matic_a : linear_matic_b',
+            'multibody_compact_pivot_robotic_a : multibody_compact_pivot_b', 'multibody_compact_pivot_velocity_a :
+            multibody_compact_pivot_b', 'multibody_door_hinge_a : multibody_door_hinge_b',
+            'multibody_piston_suspension_a : multibody_piston_suspension_b', 'multibody_pivot_a : multibody_pivot_b',
+            'multibody_suspension_a : multibody_suspension_b', 'multibody_turret_large_a : multibody_turret_large_b',
+            'multibody_turret_medium_a : multibody_turret_medium_b', 'multibody_turret_small_a :
+            multibody_turret_small_b', 'multibody_velocity_pivot_a : multibody_velocity_pivot_b', 'oil_rig_pumpjack :
+            oil_rig_pumpjack_b', 'water_hose : water_hose_b', 'winch_a : winch_b', 'winch_electric : winch_electric_b',
+            'winch_huge_a : winch_b', 'winch_large_a : winch_b'
+        </div>
+        <div class="background">
+            <h2>constraint_type</h2>
+            'connector_slider_gripper : ype=1', 'connector_slider_track : ype=1', 'linear_base : ype=1',
+            'linear_compact_base : ype=1', 'linear_compact_module : ype=1', 'linear_matic_a : ype=1', 'linear_module :
+            ype=1', 'multibody_piston_suspension_a : ype=1', 'multibody_piston_suspension_b : ype=1',
+            'multibody_suspension_a : ype=1', 'multibody_suspension_b : ype=1', 'oil_rig_pumpjack : ype=1',
+            'oil_rig_pumpjack_b : ype=1', 'water_hose : ype=1', 'winch_a : ype=1', 'winch_electric : ype=1',
+            'winch_huge_a : ype=1', 'winch_large_a : ype=1'
+        </div>
+        <div class="background">
+            <h2>constraint_axis</h2>
+            'aircraft_propeller : xis=1', 'air_exchanger : xis=1', 'air_exchanger_5_2 : xis=1', 'air_exchanger_5_3 :
+            xis=1', 'air_exchanger_9_3 : xis=1', 'air_exchanger_9_5 : xis=1', 'air_filter : xis=1', 'altimeter : xis=1',
+            'angular_speed_sensor : xis=1', 'artificial_horizon : xis=1', 'astronomy_sensor : xis=1', 'azimuth_thruster
+            : xis=1', 'battery_large : xis=1', 'battery_medium : xis=1', 'battery_small : xis=1', 'button_key : xis=1',
+            'button_keypad_large : xis=1', 'button_keypad_small : xis=1', 'button_lock : xis=1', 'button_push : xis=1',
+            'button_push_2side : xis=1', 'button_throttle_lever : xis=1', 'button_toggle : xis=1', 'button_toggle_2side
+            : xis=1', 'buzzer : xis=1', 'camera_gimbal : xis=1', 'camera_gimbal_laser : xis=1', 'camera_med : xis=1',
+            'camera_small : xis=1', 'catalytic_converter : xis=1', 'clock : xis=1', 'compass : xis=1', 'compass_sensor :
+            xis=1', 'connector_electric : xis=1', 'connector_hardpoint_a : xis=1', 'connector_hardpoint_b : xis=1',
+            'connector_hardpoint_b_round : xis=1', 'connector_hinge : xis=1', 'connector_large : xis=1',
+            'connector_slider_gripper : xis=2', 'connector_slider_track : xis=2', 'connector_small : xis=1',
+            'connector_water : xis=1', 'control_fin_large : xis=1', 'control_fin_medium : xis=1', 'control_fin_small :
+            xis=1', 'control_surface_large : xis=1', 'control_surface_medium : xis=1', 'control_surface_small : xis=1',
+            'data_logger_bool : xis=1', 'data_logger_number : xis=1', 'desalinator : xis=1', 'dial : xis=1',
+            'digital_display : xis=1', 'distance_sensor : xis=1', 'door : xis=1', 'door_dock_large : xis=1',
+            'door_dock_small : xis=1', 'door_frame_controller : xis=1', 'door_frame_corner : xis=1',
+            'door_frame_straight : xis=1', 'door_manual : xis=1', 'door_manual_large : xis=1',
+            'door_manual_sliding_small : xis=1', 'door_manual_small : xis=1', 'door_panel_corner : xis=1',
+            'door_panel_straight : xis=1', 'electric_curcuit_breaker : xis=1', 'electric_diode : xis=1', 'electric_relay
+            : xis=1', 'electrolyser : xis=1', 'engine_diesel : xis=1', 'fan_large : xis=1', 'fan_small : xis=1',
+            'fluid_exhaust : xis=1', 'fluid_filter : xis=1', 'fluid_heat_sink : xis=1', 'fluid_intake : xis=1',
+            'fluid_port_end : xis=1', 'fluid_pressure : xis=1', 'fluid_radiator : xis=1', 'fluid_radiator_electric :
+            xis=1', 'fluid_radiator_electric_5 : xis=1', 'fluid_tank_compressed_gas_1_3 : xis=1',
+            'fluid_tank_compressed_gas_1_7 : xis=1', 'fluid_tank_compressed_gas_3_7 : xis=1',
+            'fluid_tank_compressed_gas_5_9 : xis=1', 'fluid_tank_large : xis=1', 'fluid_tank_medium : xis=1',
+            'fluid_tank_small : xis=1', 'fluid_valve_flow : xis=1', 'fluid_valve_on_off : xis=1',
+            'fluid_valve_on_off_manual : xis=1', 'fluid_valve_variable : xis=1', 'foghorn : xis=1', 'friction_block :
+            xis=1', 'gate_bool_and : xis=1', 'gate_bool_blink : xis=1', 'gate_bool_capacitor : xis=1',
+            'gate_bool_constant : xis=1', 'gate_bool_delay : xis=1', 'gate_bool_not : xis=1', 'gate_bool_or : xis=1',
+            'gate_bool_xor : xis=1', 'gate_float_abs : xis=1', 'gate_float_add : xis=1', 'gate_float_clamp : xis=1',
+            'gate_float_constant : xis=1', 'gate_float_counter : xis=1', 'gate_float_counter_ping_pong : xis=1',
+            'gate_float_divide : xis=1', 'gate_float_exponent : xis=1', 'gate_float_greater_than : xis=1',
+            'gate_float_invert : xis=1', 'gate_float_less_than : xis=1', 'gate_float_modulo : xis=1',
+            'gate_float_multiply : xis=1', 'gate_float_register : xis=1', 'gate_float_sin : xis=1', 'gate_float_subtract
+            : xis=1', 'gate_float_switch : xis=1', 'gate_float_switch_input : xis=1', 'gate_float_threshold : xis=1',
+            'gate_function_large : xis=1', 'gate_function_small : xis=1', 'gate_jk_flipflop : xis=1',
+            'gate_pid_controller : xis=1', 'gate_push_to_toggle : xis=1', 'gate_sr_latch : xis=1', 'gate_torque_add :
+            xis=1', 'gate_torque_multimeter : xis=1', 'gate_train_junction : xis=1', 'gate_up_down : xis=1',
+            'gauge_display : xis=1', 'generator_large : xis=1', 'generator_medium : xis=1', 'generator_small : xis=1',
+            'giga_prop_small : xis=1', 'gps_sensor : xis=1', 'gun_belt_corner : xis=1', 'gun_belt_corner_flat : xis=1',
+            'gun_belt_corner_flat_l : xis=1', 'gun_belt_corner_flat_reverse_l : xis=1', 'gun_belt_corner_flat_reverse_xl
+            : xis=1', 'gun_belt_corner_flat_reverse_xxl : xis=1', 'gun_belt_corner_flat_xl : xis=1',
+            'gun_belt_corner_flat_xxl : xis=1', 'gun_belt_corner_l : xis=1', 'gun_belt_corner_xl : xis=1',
+            'gun_belt_corner_xxl : xis=1', 'gun_belt_junction : xis=1', 'gun_belt_junction_l : xis=1',
+            'gun_belt_junction_xl : xis=1', 'gun_belt_junction_xxl : xis=1', 'gun_belt_loader : xis=1',
+            'gun_belt_loader_l : xis=1', 'gun_belt_loader_xl : xis=1', 'gun_belt_loader_xxl : xis=1', 'gun_belt_receiver
+            : xis=1', 'gun_belt_receiver_l : xis=1', 'gun_belt_receiver_xl : xis=1', 'gun_belt_receiver_xxl : xis=1',
+            'gun_belt_straight : xis=1', 'gun_belt_straight_l : xis=1', 'gun_belt_straight_xl : xis=1',
+            'gun_belt_straight_xxl : xis=1', 'gun_drum_large : xis=1', 'gun_drum_medium : xis=1', 'gun_drum_small :
+            xis=1', 'gun_drum_xsmall : xis=1', 'gun_l : xis=1', 'gun_l_barrel : xis=1', 'gun_l_barrel_1 : xis=1',
+            'gun_l_barrel_2 : xis=1', 'gun_l_barrel_3 : xis=1', 'gun_l_muzzle : xis=1', 'gun_l_muzzle_1 : xis=1',
+            'gun_l_muzzle_2 : xis=1', 'gun_m : xis=1', 'gun_m_barrel : xis=1', 'gun_m_barrel_1 : xis=1', 'gun_m_barrel_2
+            : xis=1', 'gun_m_barrel_3 : xis=1', 'gun_m_muzzle : xis=1', 'gun_m_muzzle_1 : xis=1', 'gun_m_muzzle_2 :
+            xis=1', 'gun_rocket_launcher : xis=1', 'gun_s : xis=1', 'gun_s_barrel : xis=1', 'gun_s_muzzle : xis=1',
+            'gun_s_muzzle_1 : xis=1', 'gun_s_muzzle_2 : xis=1', 'gun_s_muzzle_3 : xis=1', 'gun_v : xis=1', 'gun_v_barrel
+            : xis=1', 'gun_xl : xis=1', 'gun_xl_barrel : xis=1', 'gun_xl_barrel_1 : xis=1', 'gun_xl_barrel_2 : xis=1',
+            'gun_xl_barrel_3 : xis=1', 'gun_xl_muzzle : xis=1', 'gun_xl_muzzle_1 : xis=1', 'gun_xl_muzzle_2 : xis=1',
+            'gun_xs : xis=1', 'gun_xxl : xis=1', 'gun_xxl_barrel : xis=1', 'gyro : xis=1', 'gyroscopic_stabilizer :
+            xis=1', 'gyroscopic_stabilizer_large : xis=1', 'gyroscopic_stabilizer_small : xis=1', 'handle : xis=1',
+            'hatch : xis=1', 'heat_exchanger_2_2 : xis=1', 'heat_exchanger_5_5 : xis=1', 'heat_exchanger_9_9 : xis=1',
+            'humidity_sensor : xis=1', 'impact_sensor : xis=1', 'indicator : xis=1', 'indicator_rgb : xis=1',
+            'intercooler : xis=1', 'intercooler_large : xis=1', 'inventory_equipment_binoculars : xis=1',
+            'inventory_equipment_c4 : xis=1', 'inventory_equipment_c4_detonator : xis=1', 'inventory_equipment_cable :
+            xis=1', 'inventory_equipment_compass : xis=1', 'inventory_equipment_defibrillator : xis=1',
+            'inventory_equipment_dog_whistle : xis=1', 'inventory_equipment_fire_extinguisher : xis=1',
+            'inventory_equipment_first_aid : xis=1', 'inventory_equipment_fishing_rod : xis=1',
+            'inventory_equipment_flare : xis=1', 'inventory_equipment_flaregun : xis=1',
+            'inventory_equipment_flaregun_ammo : xis=1', 'inventory_equipment_flashlight : xis=1',
+            'inventory_equipment_geiger_counter : xis=1', 'inventory_equipment_glowstick : xis=1',
+            'inventory_equipment_grenade : xis=1', 'inventory_equipment_hose : xis=1',
+            'inventory_equipment_night_vision_binoculars : xis=1', 'inventory_equipment_oxygen_mask : xis=1',
+            'inventory_equipment_pistol : xis=1', 'inventory_equipment_pistol_ammo : xis=1', 'inventory_equipment_radio
+            : xis=1', 'inventory_equipment_radio_signal_locator : xis=1', 'inventory_equipment_remote_control : xis=1',
+            'inventory_equipment_rifle : xis=1', 'inventory_equipment_rifle_ammo : xis=1', 'inventory_equipment_rope :
+            xis=1', 'inventory_equipment_smg : xis=1', 'inventory_equipment_smg_ammo : xis=1',
+            'inventory_equipment_speargun : xis=1', 'inventory_equipment_speargun_ammo : xis=1',
+            'inventory_equipment_strobe_light : xis=1', 'inventory_equipment_strobe_light_infrared : xis=1',
+            'inventory_equipment_transponder : xis=1', 'inventory_equipment_underwater_welding_torch : xis=1',
+            'inventory_equipment_welding_torch : xis=1', 'inventory_medium : xis=1', 'inventory_outfit : xis=1',
+            'inventory_outfit_arctic : xis=1', 'inventory_outfit_diving : xis=1', 'inventory_outfit_firefighter :
+            xis=1', 'inventory_outfit_hazmat : xis=1', 'inventory_outfit_parachute : xis=1', 'inventory_outfit_scuba :
+            xis=1', 'inventory_outfit_wep_armor_vest : xis=1', 'inventory_outfit_wep_black_hawk_vest : xis=1',
+            'inventory_outfit_wep_bomb_disposal : xis=1', 'inventory_outfit_wep_chest_rig : xis=1',
+            'inventory_outfit_wep_plate_vest : xis=1', 'inventory_small : xis=1', 'jet_engine_combustion_chamber :
+            xis=1', 'jet_engine_compressor : xis=1', 'jet_engine_duct_angle : xis=1', 'jet_engine_duct_cross : xis=1',
+            'jet_engine_duct_diagonal : xis=1', 'jet_engine_duct_straight : xis=1', 'jet_engine_duct_t : xis=1',
+            'jet_engine_exhaust_afterburner : xis=1', 'jet_engine_exhaust_basic : xis=1', 'jet_engine_exhaust_rotating :
+            xis=1', 'jet_engine_intake_large : xis=1', 'jet_engine_intake_small : xis=1', 'jet_engine_turbine_medium :
+            xis=1', 'jet_engine_turbine_small : xis=1', 'ladder_small : xis=1', 'large_propeller : xis=1', 'laser_beacon
+            : xis=1', 'laser_distance_sensor : xis=1', 'laser_point_sensor : xis=1', 'linear_base : xis=2',
+            'linear_compact_base : xis=2', 'linear_compact_head : xis=1', 'linear_compact_module : xis=2', 'linear_head
+            : xis=1', 'linear_matic_a : xis=1', 'linear_matic_b : xis=1', 'linear_module : xis=2', 'linear_speed_sensor
+            : xis=1', 'magall : xis=1', 'mic : xis=1', 'microprocessor : xis=1', 'modular_engine_air_manifold : xis=1',
+            'modular_engine_air_ram : xis=1', 'modular_engine_alternator : xis=1', 'modular_engine_clutch : xis=1',
+            'modular_engine_clutch_3x3 : xis=1', 'modular_engine_clutch_5x5 : xis=1', 'modular_engine_coolant_manifold :
+            xis=1', 'modular_engine_crankshaft : xis=1', 'modular_engine_crankshaft_3x1 : xis=1',
+            'modular_engine_crankshaft_3x3 : xis=1', 'modular_engine_crankshaft_5x5 : xis=1',
+            'modular_engine_crankshaft_converter_3x3 : xis=1', 'modular_engine_crankshaft_converter_5x5 : xis=1',
+            'modular_engine_cylinder_straight : xis=1', 'modular_engine_drive_belt : xis=1',
+            'modular_engine_exhaust_manifold_corner : xis=1', 'modular_engine_exhaust_manifold_straight : xis=1',
+            'modular_engine_fluid_pump : xis=1', 'modular_engine_flywheel : xis=1', 'modular_engine_flywheel_3x3 :
+            xis=1', 'modular_engine_flywheel_5x5 : xis=1', 'modular_engine_gearbox_1x1 : xis=1',
+            'modular_engine_gearbox_3x3 : xis=1', 'modular_engine_gearbox_5x5 : xis=1', 'modular_engine_intake_manifold
+            : xis=1', 'modular_engine_manifold_corner : xis=1', 'modular_engine_manifold_straight : xis=1',
+            'modular_engine_manifold_t : xis=1', 'modular_engine_piston_3x3 : xis=1', 'modular_engine_piston_5x5 :
+            xis=1', 'modular_engine_power_manifold_3x3 : xis=1', 'modular_engine_power_manifold_5x5 : xis=1',
+            'modular_engine_sensor_temperature : xis=1', 'modular_engine_starter : xis=1', 'monitor_1 : xis=1',
+            'monitor_1x2 : xis=1', 'monitor_1x3 : xis=1', 'monitor_2 : xis=1', 'monitor_2x3 : xis=1', 'monitor_3 :
+            xis=1', 'monitor_5 : xis=1', 'monitor_9 : xis=1', 'monitor_hud_1 : xis=1', 'monitor_hud_3 : xis=1',
+            'motor_large : xis=1', 'motor_medium : xis=1', 'motor_small : xis=1', 'multibody_compact_pivot_b : xis=1',
+            'multibody_compact_pivot_robotic_a : xis=1', 'multibody_compact_pivot_velocity_a : xis=1',
+            'multibody_door_hinge_a : xis=2', 'multibody_door_hinge_b : xis=2', 'multibody_piston_suspension_a : xis=1',
+            'multibody_piston_suspension_b : xis=1', 'multibody_pivot_a : xis=2', 'multibody_robotic_hinge_01_a :
+            xis=2', 'multibody_robotic_hinge_01_b : xis=2', 'multibody_robotic_pivot_01_a : xis=1',
+            'multibody_robotic_pivot_01_a_fluid : xis=1', 'multibody_robotic_pivot_01_b : xis=1',
+            'multibody_robotic_pivot_01_b_fluid : xis=1', 'multibody_suspension_b : xis=1', 'multibody_turret_large_a :
+            xis=1', 'multibody_turret_large_b : xis=1', 'multibody_turret_medium_a : xis=1', 'multibody_turret_medium_b
+            : xis=1', 'multibody_turret_small_a : xis=1', 'multibody_turret_small_b : xis=1',
+            'multibody_velocity_pivot_a : xis=1', 'multibody_velocity_pivot_b : xis=1', 'oil_rig_pumpjack : xis=1',
+            'oil_rig_pumpjack_b : xis=1', 'physics_flooder : xis=1', 'player_sensor : xis=1', 'pressure_sensor : xis=1',
+            'propeller : xis=1', 'propeller_pitch : xis=1', 'propeller_pitch_large : xis=1', 'propeller_pitch_small :
+            xis=1', 'radar : xis=1', 'radar_advanced : xis=1', 'radar_advanced_awacs : xis=1', 'radar_advanced_dish :
+            xis=1', 'radar_advanced_missile : xis=1', 'radar_advanced_missile_laser : xis=1', 'radar_advanced_phalanx :
+            xis=1', 'radar_detector : xis=1', 'radar_dish : xis=1', 'radar_huge : xis=1', 'radar_large : xis=1',
+            'radar_sonar : xis=1', 'radar_sonar_small : xis=1', 'radiation_detector : xis=1', 'railing_extension_angle :
+            xis=1', 'railing_segment_angle : xis=1', 'railing_segment_angle_end : xis=1', 'railing_segment_corner :
+            xis=1', 'railing_segment_corner_diag : xis=1', 'railing_segment_curve : xis=1', 'railing_segment_end :
+            xis=1', 'railing_segment_end_diag : xis=1', 'railing_segment_extension : xis=1',
+            'railing_segment_extension_diag : xis=1', 'railing_segment_middle : xis=1', 'railing_segment_middle_diag :
+            xis=1', 'rain_sensor : xis=1', 'rope_hook : xis=1', 'rope_hook_composite : xis=1', 'rope_hook_net : xis=1',
+            'rope_hook_winch_small : xis=1', 'rotation_sensor : xis=1', 'rudder : xis=1', 'rudder_surface : xis=1',
+            'rx_directional : xis=1', 'rx_directional_large : xis=1', 'rx_huge : xis=1', 'rx_huge_v2 : xis=1', 'rx_large
+            : xis=1', 'rx_large_v2 : xis=1', 'rx_med : xis=1', 'rx_med_v2 : xis=1', 'rx_small : xis=1', 'rx_small_v2 :
+            xis=1', 'rx_video_r : xis=1', 'rx_video_x : xis=1', 'scoop_intake_2 : xis=1', 'searchlight : xis=1',
+            'searchlight_small : xis=1', 'searchlight_small_2 : xis=1', 'siren : xis=1', 'small_light : xis=1',
+            'small_light_rgb : xis=1', 'solid_rocket_huge : xis=1', 'solid_rocket_huge_fins : xis=1',
+            'solid_rocket_large : xis=1', 'solid_rocket_large_fins : xis=1', 'solid_rocket_medium : xis=1',
+            'solid_rocket_medium_fins : xis=1', 'solid_rocket_nozzle_huge : xis=1', 'solid_rocket_nozzle_large : xis=1',
+            'solid_rocket_nozzle_medium : xis=1', 'solid_rocket_nozzle_small : xis=1', 'solid_rocket_small : xis=1',
+            'solid_rocket_small_fins : xis=1', 'sonar_advanced : xis=1', 'sonar_advanced_5 : xis=1', 'sonar_advanced_7 :
+            xis=1', 'sonar_jammer : xis=1', 'speaker : xis=1', 'speaker_large : xis=1', 'speaker_medium : xis=1',
+            'stair_segment : xis=1', 'stair_top : xis=1', 'steam_boiler : xis=1', 'steam_coal_duct : xis=1',
+            'steam_coal_duct_l : xis=1', 'steam_coal_duct_m : xis=1', 'steam_coal_funnel : xis=1', 'steam_coal_hopper :
+            xis=1', 'steam_coal_hopper_l : xis=1', 'steam_coal_hopper_m : xis=1', 'steam_coal_vacuum : xis=1',
+            'steam_condenser : xis=1', 'steam_nuclear_control_rod : xis=1', 'steam_nuclear_fuel_assembly : xis=1',
+            'steam_nuclear_fuel_rod : xis=1', 'steam_piston : xis=1', 'steam_piston_3x3 : xis=1', 'steam_piston_5x5 :
+            xis=1', 'steam_turbine : xis=1', 'steam_whistle : xis=1', 'temperature_probe : xis=1', 'torque_clutch :
+            xis=1', 'torque_crank : xis=1', 'torque_gearbox : xis=1', 'torque_gearbox_2 : xis=1', 'torque_meter :
+            xis=1', 'transponder : xis=1', 'transponder_locator : xis=1', 'turbocharger : xis=1', 'turbocharger_small :
+            xis=1', 'tyre_large : xis=1', 'tyre_small : xis=1', 'warhead_body_large : xis=1', 'warhead_body_medium :
+            xis=1', 'warhead_body_small : xis=1', 'warhead_emp : xis=1', 'warhead_large : xis=1', 'warhead_medium :
+            xis=1', 'warhead_small : xis=1', 'watercannon : xis=1', 'water_hose : xis=2', 'water_hose_b : xis=1',
+            'water_inlet : xis=1', 'water_jet : xis=1', 'water_nozzle : xis=1', 'water_outlet : xis=1', 'water_pump :
+            xis=1', 'water_pump_large : xis=1', 'water_pump_manual : xis=1', 'water_spawner : xis=1',
+            'water_suction_duct : xis=1', 'wheel_advanced_3 : xis=1', 'wheel_advanced_3_sus : xis=1', 'wheel_advanced_5
+            : xis=1', 'wheel_advanced_5_sus : xis=1', 'wheel_advanced_7 : xis=1', 'wheel_advanced_7_sus : xis=1',
+            'wheel_advanced_9 : xis=1', 'wheel_advanced_9_sus : xis=1', 'wheel_medium : xis=1', 'wheel_small : xis=1',
+            'wheel_tank_1 : xis=1', 'wheel_tank_5 : xis=1', 'wheel_tank_5_2 : xis=1', 'wheel_tank_7 : xis=1',
+            'wheel_tank_drive_1 : xis=1', 'wheel_tank_drive_5 : xis=1', 'wheel_tank_drive_5_2 : xis=1',
+            'wheel_tank_drive_7 : xis=1', 'winch_a : xis=2', 'winch_b : xis=1', 'winch_electric : xis=2',
+            'winch_electric_b : xis=1', 'winch_huge_a : xis=2', 'winch_huge_b : xis=1', 'winch_large_a : xis=2',
+            'winch_large_b : xis=1', 'window_1x1 : xis=1', 'window_1x1_inv_pyramid : xis=1', 'window_1x1_pyramid :
+            xis=1', 'window_1x1_wedge : xis=1', 'window_2x1 : xis=1', 'window_2x2 : xis=1', 'window_2x2_inv_pyramid :
+            xis=1', 'window_2x2_pyramid : xis=1', 'window_3x2 : xis=1', 'window_angle_l_2x3x3 : xis=1',
+            'window_angle_m_1x2x2 : xis=1', 'window_angle_m_2x2x2 : xis=1', 'window_angle_m_3x2x2 : xis=1',
+            'window_angle_s_1x2 : xis=1', 'window_angle_xl_1x4x4 : xis=1', 'window_angle_xl_2x4x4 : xis=1',
+            'window_angle_xl_3x4x4 : xis=1', 'window_corner : xis=1', 'window_corner_2 : xis=1', 'window_corner_full_1x1
+            : xis=1', 'window_corner_full_large : xis=1', 'window_corner_full_medium : xis=1', 'window_corner_full_small
+            : xis=1', 'window_corner_small : xis=1', 'window_diamond_l_1x3x4 : xis=1', 'window_diamond_l_2x3x4 : xis=1',
+            'window_diamond_l_3x3x4 : xis=1', 'window_diamond_m_1x2x3 : xis=1', 'window_diamond_m_2x2x3 : xis=1',
+            'window_diamond_m_3x2x3 : xis=1', 'window_diamond_s_1x1 : xis=1', 'window_diamond_xl_1x4x5 : xis=1',
+            'window_diamond_xl_2x4x5 : xis=1', 'window_diamond_xl_3x4x5 : xis=1', 'window_large : xis=1',
+            'window_large_angle : xis=1', 'window_narrow : xis=1', 'window_narrow_angle : xis=1', 'window_port : xis=1',
+            'window_porthole : xis=1', 'window_small_angle : xis=1', 'wind_sensor : xis=1', 'wing_large : xis=1',
+            'wing_medium : xis=1', 'wing_small : xis=1', 'wing_small_front : xis=1', 'wing_xl : xis=1', 'wing_xxl :
+            xis=1'
+        </div>
+        <div class="background">
+            <h2>constraint_range_of_motion</h2>
+            'linear_matic_a : ange_of_motion=1'
+        </div>
+        <div class="background">
+            <h2>max_motor_force</h2>
+            'torque_crank : rce=1', 'turbocharger : rce=2', 'turbocharger_small : rce=1'
+        </div>
+        <div class="background">
+            <h2>max_motor_speed</h2>
+            '01_block_static : max_motor_speed=5', '02_wedge : max_motor_speed=5', '03_pyramid : max_motor_speed=5',
+            '04_invpyramid : max_motor_speed=5', '05_wedge_2 : max_motor_speed=5', '06_pyramid_2 : max_motor_speed=5',
+            '07_invpyramid_2 : max_motor_speed=5', '08_wedge_4 : max_motor_speed=5', '09_pyramid_4 : max_motor_speed=5',
+            '10_invpyramid_4 : max_motor_speed=5', '11_pyramid_2x2 : max_motor_speed=5', '12_pyramid_2x4 :
+            max_motor_speed=5', '13_pyramid_4x4 : max_motor_speed=5', '14_invpyramid_2x2 : max_motor_speed=5',
+            '15_invpyramid_2x4 : max_motor_speed=5', '16_invpyramid_4x4 : max_motor_speed=5', 'aircraft_engine :
+            max_motor_speed=5', 'aircraft_propeller : max_motor_speed=5', 'air_filter : max_motor_speed=5', 'altimeter :
+            max_motor_speed=5', 'angular_speed_sensor : max_motor_speed=5', 'button_keypad_large : max_motor_speed=5',
+            'button_keypad_small : max_motor_speed=5', 'button_push_2side : max_motor_speed=5', 'button_throttle_lever :
+            max_motor_speed=5', 'button_toggle_2side : max_motor_speed=5', 'clock : max_motor_speed=5',
+            'connector_electric : max_motor_speed=5', 'connector_hardpoint_a : max_motor_speed=5',
+            'connector_hardpoint_b : max_motor_speed=5', 'connector_hardpoint_b_round : max_motor_speed=5',
+            'connector_large : max_motor_speed=5', 'connector_slider_gripper : max_motor_speed=5',
+            'connector_slider_track : max_motor_speed=5', 'connector_water : max_motor_speed=5', 'control_fin_large :
+            max_motor_speed=5', 'control_fin_medium : max_motor_speed=5', 'engine : max_motor_speed=5', 'fan_large :
+            max_motor_speed=5', 'fan_small : max_motor_speed=5', 'flare_launcher : max_motor_speed=5', 'fluid_pressure :
+            max_motor_speed=5', 'fluid_tank_large : max_motor_speed=5', 'fluid_tank_medium : max_motor_speed=5',
+            'fluid_tank_small : max_motor_speed=5', 'fluid_valve_flow : max_motor_speed=5', 'fluid_valve_on_off :
+            max_motor_speed=5', 'fluid_valve_variable : max_motor_speed=5', 'friction_block : max_motor_speed=5',
+            'gate_bool_capacitor : max_motor_speed=5', 'gate_float_abs : max_motor_speed=5', 'gate_float_divide :
+            max_motor_speed=5', 'gate_float_exponent : max_motor_speed=5', 'gate_float_greater_than :
+            max_motor_speed=5', 'gate_float_sin : max_motor_speed=5', 'gate_function_large : max_motor_speed=5',
+            'gate_function_small : max_motor_speed=5', 'gate_jk_flipflop : max_motor_speed=5', 'gate_sr_latch :
+            max_motor_speed=5', 'gate_torque_add : max_motor_speed=5', 'gate_torque_multimeter : max_motor_speed=5',
+            'gate_train_junction : max_motor_speed=5', 'heavy_rotor : max_motor_speed=5', 'heavy_rotor_large :
+            max_motor_speed=5', 'huge_rotor : max_motor_speed=5', 'humidity_sensor : max_motor_speed=5', 'impact_sensor
+            : max_motor_speed=5', 'indicator_rgb : max_motor_speed=5', 'instrument_display : max_motor_speed=5',
+            'landing_float : max_motor_speed=5', 'large_rotor : max_motor_speed=5', 'laser_beacon : max_motor_speed=5',
+            'laser_point_sensor : max_motor_speed=5', 'linear_base : max_motor_speed=5', 'linear_head :
+            max_motor_speed=5', 'linear_matic_a : max_motor_speed=5', 'linear_matic_b : max_motor_speed=5', 'magall :
+            max_motor_speed=5', 'mic : max_motor_speed=5', 'modular_engine_air_ram : max_motor_speed=5',
+            'multibody_door_hinge_a : max_motor_speed=5', 'multibody_door_hinge_b : max_motor_speed=5',
+            'multibody_piston_suspension_a : max_motor_speed=5', 'multibody_piston_suspension_b : max_motor_speed=5',
+            'multibody_pivot_a : max_motor_speed=5', 'multibody_robotic_hinge_01_a : max_motor_speed=5',
+            'multibody_robotic_hinge_01_b : max_motor_speed=5', 'multibody_robotic_pivot_01_a : max_motor_speed=5',
+            'multibody_robotic_pivot_01_a_fluid : max_motor_speed=5', 'multibody_robotic_pivot_01_b :
+            max_motor_speed=5', 'multibody_robotic_pivot_01_b_fluid : max_motor_speed=5', 'multibody_suspension_a :
+            max_motor_speed=5', 'multibody_suspension_b : max_motor_speed=5', 'multibody_turret_medium_a :
+            max_motor_speed=1', 'multibody_turret_medium_b : max_motor_speed=1', 'multibody_turret_small_a :
+            max_motor_speed=2', 'multibody_turret_small_b : max_motor_speed=2', 'multibody_velocity_pivot_b :
+            max_motor_speed=5', 'parachute : max_motor_speed=5', 'passenger_seat : max_motor_speed=5', 'physics_flooder
+            : max_motor_speed=5', 'player_sensor : max_motor_speed=5', 'pressure_sensor : max_motor_speed=5', 'propeller
+            : max_motor_speed=5', 'radar : max_motor_speed=5', 'radar_advanced : max_motor_speed=5',
+            'radar_advanced_awacs : max_motor_speed=5', 'radar_advanced_dish : max_motor_speed=5',
+            'radar_advanced_missile : max_motor_speed=5', 'radar_advanced_phalanx : max_motor_speed=5', 'radar_detector
+            : max_motor_speed=5', 'radar_dish : max_motor_speed=5', 'radar_huge : max_motor_speed=5', 'radar_large :
+            max_motor_speed=5', 'radar_sonar : max_motor_speed=5', 'radar_sonar_small : max_motor_speed=5',
+            'radiation_detector : max_motor_speed=5', 'railing_extension_angle : max_motor_speed=5',
+            'railing_segment_angle : max_motor_speed=5', 'railing_segment_angle_end : max_motor_speed=5',
+            'railing_segment_corner : max_motor_speed=5', 'railing_segment_corner_diag : max_motor_speed=5',
+            'railing_segment_curve : max_motor_speed=5', 'railing_segment_end : max_motor_speed=5',
+            'railing_segment_end_diag : max_motor_speed=5', 'railing_segment_extension : max_motor_speed=5',
+            'railing_segment_extension_diag : max_motor_speed=5', 'railing_segment_middle : max_motor_speed=5',
+            'railing_segment_middle_diag : max_motor_speed=5', 'rain_sensor : max_motor_speed=5', 'searchlight :
+            max_motor_speed=5', 'seat : max_motor_speed=5', 'seat_bed : max_motor_speed=5', 'seat_compact :
+            max_motor_speed=5', 'seat_handle : max_motor_speed=5', 'seat_harness : max_motor_speed=5', 'seat_helm :
+            max_motor_speed=5', 'seat_hotas : max_motor_speed=5', 'seat_medical : max_motor_speed=5', 'seat_padded :
+            max_motor_speed=5', 'seat_passenger : max_motor_speed=5', 'seat_racing : max_motor_speed=5', 'seat_stretcher
+            : max_motor_speed=5', 'sign : max_motor_speed=5', 'small_light : max_motor_speed=5', 'small_light_rgb :
+            max_motor_speed=5', 'speaker : max_motor_speed=5', 'speaker_large : max_motor_speed=5', 'speaker_medium :
+            max_motor_speed=5', 'stair_top : max_motor_speed=5', 'steam_whistle : max_motor_speed=5', 'tail_rotor :
+            max_motor_speed=5', 'temperature_probe : max_motor_speed=5', 'torque_meter : max_motor_speed=5',
+            'transponder : max_motor_speed=5', 'transponder_locator : max_motor_speed=5', 'trans_angle :
+            max_motor_speed=5', 'trans_block_angle : max_motor_speed=5', 'trans_block_cross : max_motor_speed=5',
+            'trans_block_cross_corner : max_motor_speed=5', 'trans_block_omni : max_motor_speed=5',
+            'trans_block_straight : max_motor_speed=5', 'trans_block_t_corner : max_motor_speed=5', 'trans_straight :
+            max_motor_speed=5', 'turbine : max_motor_speed=5', 'water_hose : max_motor_speed=5', 'water_hose_b :
+            max_motor_speed=5', 'water_inlet : max_motor_speed=5', 'water_outlet : max_motor_speed=5', 'water_pump :
+            max_motor_speed=5', 'water_pump_large : max_motor_speed=5', 'water_spawner : max_motor_speed=5', 'winch_a :
+            max_motor_speed=5', 'winch_b : max_motor_speed=5', 'winch_electric_b : max_motor_speed=5', 'winch_huge_a :
+            max_motor_speed=5', 'winch_huge_b : max_motor_speed=5', 'winch_large_a : max_motor_speed=5', 'winch_large_b
+            : max_motor_speed=5', 'window_1x1 : max_motor_speed=5', 'window_1x1_inv_pyramid : max_motor_speed=5',
+            'window_1x1_pyramid : max_motor_speed=5', 'window_1x1_wedge : max_motor_speed=5', 'window_2x1 :
+            max_motor_speed=5', 'window_2x2 : max_motor_speed=5', 'window_2x2_inv_pyramid : max_motor_speed=5',
+            'window_3x2 : max_motor_speed=5', 'window_angle_m_1x2x2 : max_motor_speed=5', 'window_angle_s_1x2 :
+            max_motor_speed=5', 'window_angle_xl_1x4x4 : max_motor_speed=5', 'window_angle_xl_2x4x4 :
+            max_motor_speed=5', 'window_angle_xl_3x4x4 : max_motor_speed=5', 'window_corner_full_1x1 :
+            max_motor_speed=5', 'window_corner_full_large : max_motor_speed=5', 'window_corner_full_medium :
+            max_motor_speed=5', 'window_corner_full_small : max_motor_speed=5', 'window_corner_small :
+            max_motor_speed=5', 'window_diamond_l_1x3x4 : max_motor_speed=5', 'window_diamond_l_2x3x4 :
+            max_motor_speed=5', 'window_diamond_l_3x3x4 : max_motor_speed=5', 'window_diamond_m_1x2x3 :
+            max_motor_speed=5', 'window_diamond_m_2x2x3 : max_motor_speed=5', 'window_diamond_m_3x2x3 :
+            max_motor_speed=5', 'window_diamond_s_1x1 : max_motor_speed=5', 'window_diamond_xl_2x4x5 :
+            max_motor_speed=5', 'window_diamond_xl_3x4x5 : max_motor_speed=5', 'window_port : max_motor_speed=5',
+            'wind_sensor : max_motor_speed=5'
+        </div>
+        <div class="background">
+            <h2>value</h2>
+            '01_block : 2', '01_block_weight : 5', '02_wedge : 2', '03_pyramid : 2', '04_invpyramid : 2', '05_wedge_2 :
+            2', '06_pyramid_2 : 2', '07_invpyramid_2 : 2', '08_wedge_4 : 4', '09_pyramid_4 : 4', '10_invpyramid_4 : 4',
+            '11_pyramid_2x2 : 4', '12_pyramid_2x4 : 8', '13_pyramid_4x4 : 16', '14_invpyramid_2x2 : 4',
+            '15_invpyramid_2x4 : 8', '16_invpyramid_4x4 : 16', 'aircraft_propeller : 125', 'air_exchanger : 15',
+            'data_logger_bool : 1', 'data_logger_number : 1', 'electrolyser : 575', 'friction_block : 15', 'handle : 5',
+            'ladder_small : 5', 'laser_beacon : 5', 'modular_engine_clutch : 15', 'modular_engine_clutch_3x3 : 25',
+            'modular_engine_crankshaft_converter_3x3 : 75', 'modular_engine_crankshaft_converter_5x5 : 275',
+            'multibody_turret_medium_a : 75', 'multibody_velocity_pivot_a : 25', 'propeller : 75',
+            'propeller_pitch_small : 75', 'rope_hook : 15', 'rope_hook_composite : 15', 'rope_hook_fluid : 15',
+            'rope_hook_net : 15', 'seat_padded : 25', 'torque_crank : 25', 'torque_meter : 25', 'trans_angle : 5',
+            'trans_block_angle : 5', 'trans_block_corner : 5', 'trans_block_cross : 5', 'trans_block_cross_corner : 5',
+            'trans_block_omni : 5', 'trans_block_straight : 5', 'trans_block_t : 5', 'trans_block_t_corner : 5',
+            'trans_corner : 5', 'trans_cross : 5', 'trans_cross_corner : 5', 'trans_omni : 5', 'trans_straight : 5',
+            'trans_t : 5', 'trans_t_corner : 5', 'tyre_small : 15', 'warhead_body_small : 25', 'warhead_small : 25',
+            'wheel_coaster : 25', 'window_1x1 : 5', 'window_1x1_inv_pyramid : 5', 'window_1x1_pyramid : 5',
+            'window_1x1_wedge : 5', 'window_2x2_inv_pyramid : 15', 'window_2x2_pyramid : 15', 'window_3x2 : 25',
+            'window_corner_2 : 135', 'window_corner_full_1x1 : 5', 'window_corner_full_medium : 45',
+            'window_diamond_m_1x2x3 : 15', 'window_diamond_m_3x2x3 : 45', 'window_diamond_s_1x1 : 5', 'window_large :
+            45', 'window_large_angle : 135', 'window_narrow : 15', 'window_narrow_angle : 45', 'window_small_angle : 15'
+        </div>
+        <div class="background">
+            <h2>extender_name</h2>
+            'linear_base : e=linear_module', 'linear_compact_base : e=linear_compact_module'
+        </div>
+        <div class="background">
+            <h2>extender_name</h2>
+            'linear_base : e=linear_module', 'linear_compact_base : e=linear_compact_module'
+        </div>
+        <div class="background">
+            <h2>extender_name</h2>
+            'linear_base : e=linear_module', 'linear_compact_base : e=linear_compact_module'
+        </div>
+    </div>
+</body>
+
+</html>
